@@ -1,0 +1,32 @@
+html {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: inherit;
+  margin: 0;
+  user-select: none;
+}
+
+#field {
+  display: grid;
+  grid-template: repeat(4, 50px) / repeat(4, 50px);
+  grid-gap: 5px;
+  height: auto;
+  width: auto;
+  padding: 5px;
+  background: #8396a5;
+}
+
+#field div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #e2e2e2;
+  font: 20px sans-serif;
+  color: #e2e2e2;
+  cursor: pointer;
+}
