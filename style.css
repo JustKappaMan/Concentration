@@ -21,7 +21,7 @@ body {
   background: #8396a5;
 }
 
-#field div {
+.card {
   display: flex;
   justify-content: center;
   align-items: center;
