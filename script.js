@@ -11,7 +11,7 @@
 
   // Fill cards with numbers
   for (let i = 0; i < cards.length; i++) {
-    cards[i].innerText = numbers[i];
+    cards[i].dataset.value = numbers[i];
   }
 
   cards.forEach(card => {
@@ -19,6 +19,7 @@
       selectedCards.push(document.querySelector(`#${e.target.id}`));
 
       card.style.backgroundColor = '#8396a5';
+      card.innerText = card.dataset.value;
 
       if (selectedCards.length === 2) {
         // Block all cards to check if selected cards are equal
@@ -27,13 +28,14 @@
         });
 
         setTimeout(() => {
-          if (selectedCards[0].innerText === selectedCards[1].innerText) {
+          if (selectedCards[0].dataset.value === selectedCards[1].dataset.value) {
             selectedCards.forEach(card => {
               openedCards.push(card);
             });
           } else {
             selectedCards.forEach(card => {
               card.style.backgroundColor = '#e2e2e2';
+              card.innerText = '';
             });
           }
 
@@ -56,10 +58,10 @@
             for (let i = 0; i < cards.length; ++i) {
               cards[i].style.backgroundColor = '#e2e2e2';
               cards[i].style.pointerEvents = 'auto';
-              cards[i].innerText = numbers[i];
+              cards[i].dataset.value = numbers[i];
             }
           }
-        }, 1000);
+        }, 500);
       }
     });
   });

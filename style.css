@@ -30,3 +30,7 @@ body {
   color: #e2e2e2;
   cursor: pointer;
 }
+
+.card:hover {
+  background: #c5dde5;
+}
