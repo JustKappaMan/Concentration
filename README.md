@@ -5,7 +5,6 @@
 A game where you find matching cards.
 
 ## Credits
-* [JetBrains](https://www.jetbrains.com) for [Open Source Development license](https://www.jetbrains.com/community/opensource)
 * [Fathema Khanom](https://www.flaticon.com/authors/fathema-khanom) for the favicons
 
 ## License
